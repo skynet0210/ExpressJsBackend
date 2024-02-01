@@ -8,6 +8,7 @@ const { logErrors, errorHandler, boomerrorHandler } = require('./middlewares/err
 const app = express();
 const port = 3000;
 
+
 app.use(express.json());
 
 const whitelist = ['http:localhost:5500', 'https://myapp.com', 'http://127.0.0.1:5500'];
