@@ -7,7 +7,7 @@ function logErrors(err, req, res, next) {
 function errorHandler(err, req, res, next) {
     console.log('errorandler');
     res.status(500).json({
-        message: error.message,
+        message: err.message,
         stack: err.stack,
     });
 }
